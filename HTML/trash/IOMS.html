@@ -1,0 +1,471 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>IOMS</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css"/>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="140503907288-g665dccn1p9me9ihmt6sq6aho7vhqujc.apps.googleusercontent.com">
+	<meta name="google-signin-hosted_domain" content="iitgoa.ac.in">
+    <link rel="stylesheet" type="text/css" href="../CSS/navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/formStyle.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="row">
+		<div class="head">
+			<div class="Title1">IIT GOA HOSTEL</div>
+			<div class="Title2">GEC Campus Farmagudi,Ponda,Goa 403401</div>
+		</div>
+	</div>
+
+    <div class="menu">
+    	<span class="fa fa-bars modify"></span>
+    </div>
+
+		<nav class="topNavigation">
+		<ul>
+			<li><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+			<li><a href="about.html"><span class="fa fa-info"></span>About</a></li>
+			<li><a href="#"><span class="fa fa-users"></span>Council</a>
+			<ul>
+				<li><a href="presentCouncil.html">Present</a></li>
+				<li><a href="council2017_2018.html">2017-2018</a></li>
+				<li><a href="council2016_2017.html">2016-2017</a></li>
+			</ul>
+			</li>
+			<li><a href="#"><span class="fa fa-book"></span>Constitution</a></li>
+			<li><a href="CSMS.html"><span class="fa fa-pencil-square-o"></span>CSMS</a></li>
+			<li><a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
+			<ul>
+				<li><a href="newMessFeedback.php">Mess</a></li>
+				<li><a href="SecurityFeedback.html">Security</a></li>
+				<li><a href="HouseKeepingFeedback.html">House Keeping</a></li>
+			</ul>
+			</li>
+			<li><a href="IOMS.html"><span class="fa fa-pencil-square-o"></span>IOMS</a></li>
+		</ul>
+	</nav>
+
+	<div class="row">
+    	<div class="column-100">
+    		<div class="card" style="border-style: ridge;border-radius: 5px">
+    		     <div class="Title4">In Out Management System</div>
+    	    </div>
+    	</div>
+    </div>
+
+
+
+<div class="row">
+		<div class="column-100">
+			<div class="container">
+				<div class="card" style="background-color: #6a5acd;border-radius: 5px">
+						<div class="card" style="box-shadow: 5px 5px 5px 5px #191970;">
+
+							<!--<div class="Title3" id="activeThing">Login</div>-->
+<!----------------------------------------Sign In link----------------------------------------------->
+                            <div id="Login">
+                            	<div class="row" id="SignIn">
+                     	            <div class="row">
+                     	                 <lable><b>Sign In using your IIT Goa Email ID</b></lable>
+                     	             </div>
+
+	                     	         <div class="row">
+	                     	         	<div class="column-33">
+	                     	         	</div>
+		                     	        <div class="column-33">
+		                                  <div class="g-signin2" data-width="290" data-height="50"  data-onsuccess="onSignIn"></div>
+		                                </div>
+		                                <div class="column-33">
+		                                </div>
+                                     </div>
+                                     <div class="row">
+                        	             <label class="error" id="SignInError"></label>
+                                    </div>
+                                </div>
+
+	                            <div class="row" id="IAm">
+	                            	  <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStudent" name="IsStudent" value="I am a Student ">
+									  </div>
+									   <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStaff" name="IsStaff" value="I am a Faculty/Staff Member">
+									  </div>
+	                            </div>
+
+                                <div class="message" id="Alert">
+						        	<h2 style="color:red"><span class="fa fa-exclamation-triangle" aria-hidden="true"></span>This facility is only for students!</h2>
+						        	<div class="row">
+										<div claas="column-100" style="text-align: center">
+											<a href="#" onclick="signOut('Alert');">Sign out</a>
+										</div>
+								    </div>
+								</div>
+ 
+							    <form action="" id="NewStudent" >
+                                    <div class="row" style="background-color:#dcdcdc">
+							             <div class="Title3" id="info">Update Your Profile</div>
+						            </div>
+
+									<label for ="Roll_No"><b>Roll Number</b></label>
+									<input type="text" id="Roll_No" name="RollNo" placeholder="Your Roll Number"/>
+									<label class="error" for="Roll_No" id="Roll_NoError">This Field is required</label>
+                                    
+                                    <label for ="hostelNo"><b>Hostel</b></label>
+                                    <select id="hostelNo" name="HostelNo">
+						        	     <option value="1">Boys Hostel-1 (GEC Hostel)</option>
+						        	     <option value="2">Boys Hostel-2 (New Hostel)</option>
+						        	     <option value="3">Girls Hostel-1 (New Hostel)</option>
+						        	</select>
+
+                                    <div class="row">
+                                    	<div class="col-50">
+                                    		<div class="col-50">
+												<label for ="floor"><b>Floor</b></label>
+											</div>
+											<div class="col-50">
+												<select id="floor" name="Floor">
+						        	      		<option value="G">Ground</option>
+						        	     			<option value="F">First</option>
+						        	     			<option value="S">Second</option>
+						        				</select>
+											</div>
+								        </div>
+                                    	<div class="col-50">
+                                    		<div class="col-50">
+												<label for ="room"><b>Room Number</b></label>
+											</div>
+											<div class="col-50">
+												<input type="text" id="room" name="RoomNo" placeholder="Your Room Number"/>
+												<label class="error" for="room" id="roomError">This Field is required</label>
+											</div>
+								        </div>
+								    </div>
+
+                                    <div class="row">
+                                    	<div class="col-50">
+                                    		<div class="col-50" style="background-color:;width:">
+								    			<label for ="gender"><b>Gender</b></label>
+								    		</div>
+								    		<div class="col-50" style="background-color:;width:">
+                                    			<select id="gender" name="Gender">
+						        	     			<option value="Male">Male</option>
+						        	     			<option value="Female">Female</option>
+						        				</select>
+						        		 	</div>
+						        		</div>
+						        		<div class="col-50">
+						        			<div class="col-50" style="background-color:;width:">
+						        				<label for ="dob"><b>Date Of Birth</b></label>
+						        			</div>
+						        			<div class="col-50" style="background-color:;width:">
+												 <label><input type="date" name="DOB"></label>
+                                                 <label class="error" id="DOBError"></label>
+											</div>
+						        		</div>
+						        	</div>
+
+						        	<label for ="StudentContact"><b>Your Contact Number</b></label>
+									     <input type="text" id="StudentContact" name="StudentContact" placeholder="Contact Number"/>
+									     <label class="error" for="StudentContact" id="StudentContactError">This Field is required</label>
+                                     
+                                    <label for ="ParentContact"><b>Parent's Contact Number</b></label>
+									     <input type="text" id="ParentContact" name="ParentContact" placeholder="Contact Number"/>
+									     <label class="error" for="ParentContact" id="ParentContactError">This Field is required</label>
+
+									     <label for ="ParentEmail"><b>Parent's Email-ID</b></label>
+									     <input type="text" id="ParentEmail" name="ParentEmail" placeholder="Email Id of parent"/>
+										     <label class="error" for="ParentEmail" id="ParentEmailError">This Field is required</label>
+                                    <label class="error" id="result"></label>
+
+									<div class="row" style="padding-top:10px">
+										<input type="submit" id="formNewStudent" name="formNewStudent" value="Proceed">
+								    </div>
+						        </form>
+						    </div>
+			
+
+
+<!------------------------------------------------Profile------------------------------------------------->
+
+                            <div id="Profile">
+
+	                            <div class="row" style="background-color:#dcdcdc">
+									<div class="Title3" id="Name"></div>
+								</div>
+
+								<div class="row">
+									<div claas="column-100" style="text-align: right">
+										<a href="#" onclick="signOut('Profile');">Sign out</a>
+									</div>
+								</div>
+
+	                                <div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:;">
+												    	<div class="label1"><h3>Roll Number</h3></div>
+												    	<!--<h2>Roll Number</h2>-->
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="RolNo"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="width:">
+												    	<div class="label1"><h3>Room Number</h3></div>
+													</div>
+												    <div class="col-20" style="width:">
+												    	<div class="label1" id="RomNo"></div>
+													</div>
+											</div>
+									</div>
+
+									<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>E-mail</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="E_mail"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Hostel Number</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="HNo"></div>
+													</div>
+											</div>
+									</div>
+                                    <!--<hr style="color:blue">-->
+
+									<div id="ChooseInOut">
+										<!--<div class="row">
+					                     	<div class="col-25">
+						                     	
+											</div>
+											<div class="col-25">
+												<div class="row" style="padding-top:10px;width:">
+													<input type="button" name="In" id="In" value="In">
+												</div>
+											</div>
+											<div class="col-25">
+												<div class="row" style="padding-top:10px;width:">
+													<input type="button" name="Out" id="Out" value="Out">
+												</div>
+											</div>
+											<div class="col-25">												
+							        		</div>
+							        	</div>-->
+							        	<div class="row" style="padding-top:10px;width:">
+											<input type="button" name="Out" id="Out" value="Make Out Entry">
+										</div>
+	                     			</div>
+
+
+	                     			<div class="row">
+							        		<label class="error" id="ChooseInOutError"></label>
+							        </div>
+
+	                     			<div id="ShowEntry">
+	                     				<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Destination</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="destination"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Reason</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="reason"></div>
+													</div>
+											</div>
+									    </div>
+	                     				<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Departure Date</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="D_Date"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Arrival Date (Expected)</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="A_Date"></div>
+													</div>
+											</div>
+									    </div>
+									    <div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Parent's Contact No.</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="P_Contact"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Parent's Email</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="P_Email"></div>
+													</div>
+											</div>
+									    </div>
+									    <div class="row" style="background-color:">
+									  
+									    	<div class="col-25" style="background-color:;width:">
+												    <div class="label1"><h3>Declaration</h3></div>
+										    </div>
+											 <div class="column-80" style="background-color:;width:">
+											    	<div class="label1" id="Responsible_On"></div>
+										     </div>									        
+									    </div>
+
+									    <div class="row" style="padding-top:10px;width:">
+											<input type="button" name="Return" id="Return" value="Make Return Entry">
+										</div>
+	                     			</div>
+                                    
+                                    <form action="" id="ReturnForm">
+                                    	<div class="row">
+                                         	 <div class="column-50">
+                                         	 	<div class="col-50">
+		                                         	<label for ="ReturnDate"><b>Return Date</b></label>
+		                                         </div>
+		                                         <div class="col-50">
+											         <label><input type="date"id="ReturnDate" name="ReturnDate"></label>
+											         <label class="error" for="ReturnDate" id="ReturnDateError">This Field is required</label>
+											     </div>
+										     </div>
+										 </div>
+
+										 <label class="error" id="ReturnFormError"></label>
+
+										 <div class="row" style="padding-top:10px">
+							                 <input type="submit" name="FormReturn" id="FormReturn" value="Submit">
+							             </div>
+                                    </form>
+
+									<form action="" id="OutStation">
+										 <label for ="Destination"><b>Destination</b></label>
+									     <input type="text" id="Destination" name="Destination" placeholder="Place where you are going"/>
+									     <label class="error" for="Destination" id="DestinationError">This Field is required</label>
+                                         
+                                         <div class="row">
+                                         	 <div class="col-50">
+                                         	 	<div class="col-50">
+		                                         	<label for ="DepartureDate"><b>Departure Date</b></label>
+		                                         </div>
+		                                         <div class="col-50">
+											         <label><input type="date"id="DepartureDate" name="DepartureDate"></label>
+											         <label class="error" for="DepartureDate" id="DepartureDateError">This Field is required</label>
+											     </div>
+										     </div>
+										      <div class="col-50">
+                                         	 	<div class="col-50">
+		                                         	<label for ="ArrivalDate"><b>Arrival Date</b></label>
+		                                         </div>
+		                                         <div class="col-50">
+											         <label><input type="date" id="ArrivalDate" name="ArrivalDate"></label>
+											         <label class="error" for="ArrivalDate" id="ArrivalDateError"></label>
+											     </div>
+										     </div>
+										 </div>
+										 <label class="error" id="InvalidDateError"></label>
+
+										 <label for ="Reason"><b>Reason</b></label>
+									     <input type="text" id="Reason" name="Reason" placeholder="Reason of going"/>
+									     <label class="error" for="Reason" id="ReasonError">This Field is required</label>
+
+									     <!-- <label for ="ParentContact"><b>Parent's Contact Number</b></label>
+									     <input type="text" id="ParentContact" name="ParentContact" placeholder="Contact Number"/>
+									     <label class="error" for="ParentContact" id="ParentContactError">This Field is required</label>
+
+									     <label for ="ParentEmail"><b>Parent's Email-ID</b></label>
+									     <input type="text" id="ParentEmail" name="ParentEmail" placeholder="Email Id of parent"/>
+									     <label class="error" for="ParentEmail" id="ParentEmailError">This Field is required</label> -->
+									     <label for="Declaration"><b>Person who will take my responsibility</b></label>
+									     <select id="rep" name="ResponsibleOn">
+				        	     			<option value="MySelf">My Self</option>
+				        	     			<option value="MyParents">My Parents</option>
+						                </select>
+						            <div id="TandC">
+						            	<label><b>Scenarios for Application</b></label>
+						            	<ul style="margin-left:20px;color: red">
+						            		<li>1. When a student is missing his/her classes on a weekday, even for a single day he/she first needs to take permission from Academics office. Further the office will notify us and the Wardens w.r.t student's out of campus request details. Additionally student is requested to inform the Hall office once the approval is received.</li>
+						            		<li>2.When a student is missing his/her classes on a weekend, he /she needs to forward his/her application via Hall Office to the Warden for the approval. Again, if any classes are arranged on a Saturday ( falling in between the travel dates of the student) due to any contingency then institute won't be responsible to arrange additional session for him/her.</li>
+
+						            		<li> Additionally, full rebate will be given to the students for a minimum period of 2 days and maximum of 30 days in a year only in case a prior application has been sent to the caterer through Hall Office via email, at least 8 days before the actual leave dates. Student in this case would get a rebate for each day applied for rebate.</li>
+						            		
+						            </ul>
+						            </div>
+						            <div id="TandC">
+						            	<label><b>Leave Scenarios</b></label>
+						            	<ul style="margin-left:20px;color: red">
+						            		<li>There is No Academic leave during the semester.</li>
+						            		<li>If any student who wishes to go on leave then he/she is responsible on their own and the institute does not take any responsibility of that student. The institute will not conduct any additional lectures, labs or	quizzes for those missed one.</li>
+						            		<li>If any student is taking leave on academic/medical grounds then he/she needs to attach the copy of the approval from Academics for perusal.</li>
+						            		
+						            </ul>
+						            </div>
+						            <div id="TandC">
+						            	<label><b>Mess Rebate</b></label>
+						            	<ul style="margin-left:20px;color: red">
+						            		<p>Additionally, full rebate will be given to the students for a minimum period of 2 days and maximum of 30 days in a year only in case a prior application has been sent to the caterer through Hall Office via email, at least 8 days before the actual leave dates. Student in this case would get a rebate for each day applied
+											for rebate.</p>
+						            		
+						            </ul>
+						            </div>	
+						            	<label><b>Terms and Conditions</b></label>
+						            	<ul style="margin-left:20px;color: red">
+						            		<li>Institue is not responsible for any mishappenings during your time away from the campus</li>
+						            		<li>If according to our database, you are under 18 years, an email will be sent to your parents regarding your departure and your parents will be responsible for your journey and away time, no matter what you have selected in 'Person who will take my responsibility'.</li>
+
+						            		<li>If you are 18 or older, we will inform your parents only when you select 'My Parents' in the field asking 'Person who will take my responsibility'.</li>
+						            		
+						            	</ul>
+						            </div>
+                                          
+                                         <label class="error" id="OutStationError"></label>
+
+									     <div class="row" style="padding-top:10px">
+							                 <input type="submit" name="FormOutStation" id="FormOutStation" value="Submit">
+							             </div>
+									</form>
+
+									 <div class="message" id="RightMessage">
+								        	<h2 id="msg1" style="color:green"><span class="fa fa-check-circle"></span>Successful Entry!</h2>
+								        	<p id="msg2" style="color:green">Have a nice Journey.</p>
+								     </div>
+
+	                            </div>
+
+			        	   </div>
+				   </div>
+	    	</div>
+   		</div>
+	</div>
+
+<footer style="background-color:rgb(38,30,46);text-align: center;color:white">&copy; Copyright 2019 Web Team IIT GOA</footer>
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../javaScript/menu.js"></script>
+<script src="../javaScript/SignInScripts.js"></script>
+<script src="../javaScript/OutStationScripts.js"></script>

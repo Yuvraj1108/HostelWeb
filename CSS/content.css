@@ -1,0 +1,316 @@
+
+body{
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	height:auto;
+	font-family:sans-serif;/*cursive;*/
+	/*background-color:*/ 
+	/*background-image: url("../Images/PIC1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*animation:back 10s infinite;
+	.transition-delay: 2s;
+	/*background:linear-gradient(to bottom,#ffffe0,#87cefa);*/
+}
+
+.backtotop{
+	background-color: red;
+	position: sticky;
+	top: 90%;
+	left: 90%;
+}
+
+#Row1
+{ 
+	height:100%;
+
+	background-image: url("../Images/GirlsHostel.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	/*animation:back 10s infinite;
+	.transition-delay: 4s;
+	 transition: width 2s;*/
+
+}
+.footer{
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(38,30,46);
+   color: white;
+   text-align: center;
+}
+@keyframes back
+{
+	25%{
+		background-image: url(../Images/PIC2.png);
+	}
+	50%{
+		background-image: url(../Images/PIC3.png);
+	}
+	75%{
+		background-image: url(../Images/PIC6.png);
+	}
+	100%{
+		background-image: url(../Images/hostel8.jpg);
+	}
+}
+.col-10
+{
+	float:left;
+	width:14%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.col-12{
+	/*background-color: blue;*/
+	float:left;
+	width:12.5%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.col-16{
+	/*background-color: blue;*/
+	float:left;
+	width:16%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.col-18{
+	/*background-color: blue;*/
+	float:left;
+	width:17%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.column-20{
+	/*background-color: blue;*/
+	float:left;
+	width:20%;
+	padding:1%;
+	/*box-sizing: border-box;*/
+}
+.col-20{
+	/*background-color: blue;*/
+	float:left;
+	width:20%;
+	padding:1%;
+	box-sizing: border-box;
+}
+
+.col-25{
+	/*background-color: blue;*/
+	float:left;
+	width:25%;
+	padding:1%;
+	box-sizing: border-box;
+}
+
+.column-33{
+	float:left;
+	width:33%;
+	padding:1%;
+	box-sizing: border-box;
+
+}
+.column-50
+{
+	float:left;
+	width:50%;
+	padding:1%;
+	/*box-sizing: border-box;*/
+
+}
+.col-50
+{
+	float:left;
+	width:50%;
+	padding:1%;
+	box-sizing:border-box;
+}
+.column-80{
+	/*background-color: blue;*/
+	float:left;
+	width:74%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.column-100
+{
+	float:left;
+	width:96%;
+	padding:1%;
+	/*box-sizing: border-box;*/
+
+}
+.col-100
+{
+	float:left;
+	width:100%;
+	padding:1%;
+	box-sizing: border-box;
+}
+.label1{
+	color:#191970;
+	width:100%;
+	/*height:40px;*/
+	padding:10px 0px 0px 10px;
+	display:inline-block;
+}
+.row:after{
+	content:"";
+	display:table;
+	clear:both;
+	/*box-sizing: border-box;*/
+}
+.card{
+	background-color: #ffffff ;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:10px;
+}
+.cardcouncil{
+	background-color: #ffffff ;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:10px;
+	/*border-radius:10%*/;
+}
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    margin:0 auto;
+    /*padding: 20px;*/
+}
+#MessMenu
+{
+	display: none;
+}
+#MondayMenu
+{
+	display: none;
+}
+#TuesdayMenu
+{
+	display: none;
+}
+#WednesdayMenu
+{
+	display: none;
+}
+#ThursdayMenu
+{
+	display: none;
+}
+#FridayMenu
+{
+	display: none;
+}
+#SaturdayMenu
+{
+	display: none;
+}
+#SundayMenu
+{
+	display: none;
+}
+#hospitalImage{
+	display:none;
+}
+#IAm
+{
+	display:none;
+}
+#NewStudent
+{
+	display:none;
+}
+#StaffProfile
+{
+	display:none;
+}
+/*#RowInfo
+{
+	display:none;
+}*/
+#Alert
+{
+	display:none;
+}
+@media screen and (max-width :700px)
+{
+	.col-10{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.col-16{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.column-20{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.col-20{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.col-25{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.column-33{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.column-80{
+		width:90%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.column-50{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.col-50{
+		width:95%;
+		padding:0px;
+		margin:0 auto;
+	}
+	.column-100
+    {
+	  width:95%;
+	  padding:0px;
+	  margin:0 auto;
+    }
+    .col-100
+    {
+    	width:100%;
+    	padding:0px;
+    	margin:0 auto;
+    }
+	.fakeimg{
+		padding:0px;
+	}
+	.card{
+       margin:5px auto;
+	}
+	#hospitalImage{
+		display:block;
+	}
+	/*#Row1
+	{
+		background-size: cover;
+	}*/
+}

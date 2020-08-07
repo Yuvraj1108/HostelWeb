@@ -1,0 +1,334 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Mess Feedback</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="140503907288-g665dccn1p9me9ihmt6sq6aho7vhqujc.apps.googleusercontent.com">
+	<meta name="google-signin-hosted_domain" content="iitgoa.ac.in">
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/sideNavigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/formStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/messMenuStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/imageSlide.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+	<!--<div class="row" style="height:20px">
+	</div>-->
+	 <div class="row">
+		<div class="head">
+			<div class="Title1">IIT GOA HOSTEL</div>
+			<div class="Title2">GEC Campus Farmagudi,Ponda,Goa 403401</div>
+		</div>
+	</div>
+
+    <div class="menu">
+    	<span class="fa fa-bars modify"></span>
+    </div>
+
+    <div class="row">
+		<nav class="topNavigation">
+			<ul>
+				<li><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+				<li><a href="about.html"><span class="fa fa-info"></span>About</a></li>
+				<li><a href="#"><span class="fa fa-users"></span>Council</a>
+				<ul>
+					<li><a href="presentCouncil.html">Present</a></li>
+					<li><a href="council2017_2018.html">2017-2018</a></li>
+					<li><a href="#">2016-2017</a></li>
+				</ul>
+				</li>
+				<li><a href="#"><span class="fa fa-book"></span>Constitution</a></li>
+				<li><a href="CSMS.html"><span class="fa fa-pencil-square-o"></span>CSMS</a></li>
+				<li><a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
+				<ul>
+					<li><a href="MessFeedback.html">Mess</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">House Keeping</a></li>
+				</ul>
+				</li>
+				<li><a href="IOMS.html"><span class="fa fa-pencil-square-o"></span>IOMS</a></li>
+			</ul>
+		</nav>
+   </div>
+
+   <div class="row">
+    	<div class="column-100">
+    		<div class="card" style="border-style: ridge;border-radius: 5px">
+    		     <div class="Title4">Feedback For Mess</div>
+    	    </div>
+    	</div>
+    </div>
+
+    <div class="row">
+		<div class="column-100">
+			<div class="container">
+				<div class="card" style="background-color: #6a5acd;border-radius: 5px">
+					<div class="card" style="box-shadow: 5px 5px 5px 5px #191970;">
+<!----------------------------------------SignIn------------------------------------------------------------------>                     
+                    <div id="Login">
+                            	<div class="row" id="SignIn">
+                     	            <div class="row">
+                     	                 <lable><b>Sign In using your IIT Goa Email ID</b></lable>
+                     	             </div>
+
+	                     	         <div class="row">
+	                     	         	<div class="column-33">
+	                     	         	</div>
+		                     	        <div class="column-33">
+		                                  <div class="g-signin2" data-width="290" data-height="50"  data-onsuccess="onSignIn"></div>
+		                                </div>
+		                                <div class="column-33">
+		                                </div>
+                                     </div>
+                                     <div class="row">
+                        	             <label class="error" id="SignInError"></label>
+                                    </div>
+                                </div>
+
+	                            <div class="row" id="IAm">
+	                            	  <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStudent" name="IsStudent" value="I am a Student ">
+									  </div>
+									   <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStaff" name="IsStaff" value="I am a Faculty/Staff Member">
+									  </div>
+									  <label class="error" id="IAmError"></label>
+	                            </div>
+
+                                <div class="message" id="Alert">
+						        	<h2 style="color:red"><span class="fa fa-exclamation-triangle" aria-hidden="true"></span>This facility is only for students!</h2>
+						        	<div class="row">
+										<div claas="column-100" style="text-align: center">
+											<a href="#" onclick="signOut('Alert');">Sign out</a>
+										</div>
+								    </div>
+								</div>
+ 
+							    <form action="" id="NewStudent" >
+                                    <div class="row" style="background-color:#dcdcdc">
+							             <div class="Title3" id="info">Update Your Profile</div>
+						            </div>
+
+									<label for ="Roll_No"><b>Roll Number</b></label>
+									<input type="text" id="Roll_No" name="RollNo" placeholder="Your Roll Number"/>
+									<label class="error" for="Roll_No" id="Roll_NoError">This Field is required</label>
+                                    
+                                    <label for ="hostelNo"><b>Hostel</b></label>
+                                    <select id="hostelNo" name="HostelNo">
+						        	     <option value="Boys Hostel-1">Boys Hostel-1</option>
+						        	     <option value="Girls Hostel-1">Girls Hostel-1</option>
+						        	</select>
+
+									<label for ="room"><b>Room Number</b></label>
+									<input type="text" id="room" name="RoomNo" placeholder="Your Rome Number"/>
+									<label class="error" for="room" id="roomError">This Field is required</label>
+									
+                                    <label class="error" id="result"></label>
+
+									<div class="row" style="padding-top:10px">
+									<input type="submit" id="formNewStudent" name="formNewStudent" value="Proceed">
+								    </div>
+						        </form>
+						    </div>
+                     
+
+<!-----------------------------------Profile----------------------------------------------------------------------------->                     
+                    <div id="Profile">
+		                    	<div class="row" style="background-color:#dcdcdc">
+									<div class="Title3" id="Name"></div>
+								</div>
+
+								<div class="row">
+									<div claas="column-100" style="text-align: right">
+										<a href="#" onclick="signOut('Profile');">Sign out</a>
+									</div>
+								</div>
+
+                                <div id="StudentProfile">
+	                                <div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:;">
+												    	<div class="label1"><h3>Roll Number</h3></div>
+												    	<!--<h2>Roll Number</h2>-->
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="RolNo"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="width:">
+												    	<div class="label1"><h3>Room Number</h3></div>
+													</div>
+												    <div class="col-20" style="width:">
+												    	<div class="label1" id="RomNo"></div>
+													</div>
+											</div>
+									</div>
+
+									<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>E-mail</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="E_mail"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Hostel Number</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="HNo"></div>
+													</div>
+											</div>
+									</div>
+							    </div>
+
+
+	                     <div class="row" id="ChooseMeal">
+	                     	<div class="col-25">
+		                     	<div class="row" style="padding-top:10px;width:">
+									<input type="button" name="Breakfast" id="Breakfast" value="Breakfast Feedback">
+								</div>
+							</div>
+							<div class="col-25">
+								<div class="row" style="padding-top:10px;width:">
+									<input type="button" name="Lunch" id="Lunch" value="Lunch Feedback">
+								</div>
+							</div>
+							<div class="col-25">
+								<div class="row" style="padding-top:10px;width:">
+									<input type="button" name="Snacks" id="Snacks" value="Snacks Feedback">
+								</div>
+							</div>
+							<div class="col-25">
+								<div class="row" style="padding-top:10px;width:">
+									<input type="button" name="Dinner" id="Dinner" value="Dinner Feedback">
+								</div>
+							</div>
+	                     </div>
+
+	                     <form action="" id="SelectMealItems">	                     
+	                      
+		                     <label for="Items"><b id="MealName"></b></label>
+		                     <div id="Items">	
+		                     </div>
+	                         
+		                     <div class="row" style="padding-top:10px">
+							    <input type="submit" name="Proeed" id="Proceed" value="Proceed">
+							 </div>
+	                     </form>
+
+	                    <form action="" id="MessFeedback">
+	                    	<div id="Questions">
+	                    	</div>
+		                    <!-- <label for ="FoodQuality"><b>Quality of Food</b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="FoodQuality" value="Very Poor"> Very Poor</div>			
+						     	 <div class="col-20"><input type="radio" name="FoodQuality" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="FoodQuality" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="FoodQuality" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="FoodQuality" value="Very Good"> Very Good</div>
+							 </div>-->
+
+							 <label for ="Hygiene"><b>Kitchen And Dining Hall Hygiene </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Hygiene" value="Very Poor"> Very Poor</div>			
+						     	 <div class="col-20"><input type="radio" name="Hygiene" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Hygiene" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Hygiene" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Hygiene" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for ="Variety"><b>Variety in Meals </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Variety" value="Very Poor"> Very Poor</div>			
+						     	 <div class="col-20"><input type="radio" name="Variety" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Variety" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Variety" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Variety" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for ="IngredientQuality"><b>Quality of Ingredients </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="IngredientQuality" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="IngredientQuality" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="IngredientQuality" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="IngredientQuality" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="IngredientQuality" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for ="WaterQuality"><b>Quality of Drinking Water </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="WaterQuality" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="WaterQuality" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="WaterQuality" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="WaterQuality" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="WaterQuality" value="Very Good"> Very Good</div>
+							 </div>
+
+
+							 <label for ="Timing"><b>Timing of Mess </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Timing" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="Timing" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Timing" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Timing" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Timing" value="Very Good"> Very Good</div>
+							 </div>
+
+
+							 <label for ="Insects"><b>Insects removal arrangement </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Insects" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="Insects" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Insects" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Insects" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Insects" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for ="Service"><b>Service by Staff </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Service" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="Service" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Service" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Service" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Service" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for ="Overall"><b>Overall Mess Facilities </b></label>
+		                     <div class="row">
+		                     	 <div class="col-20"><input type="radio" name="Overall" value="Very Poor"> Very Poor</div>	
+						     	 <div class="col-20"><input type="radio" name="Overall" value="Poor"> Poor</div>
+							     <div class="col-20"><input type="radio" name="Overall" value="Average"> Average</div>
+							 	 <div class="col-20"><input type="radio" name="Overall" value="Good"> Good</div>
+							     <div class="col-20"><input type="radio" name="Overall" value="Very Good"> Very Good</div>
+							 </div>
+
+							 <label for="commennt"><b>Your Valuable Comment</b></label>
+						     <textarea rows="5" cols="50" id="comment" name="comment"></textarea>
+		                     
+		                     <div class="row" style="padding-top:10px">
+							    <input type="submit" name="MessFeedback" id="MessFeedback" value="Submit">
+							 </div>
+						</form>
+                     </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<footer style="background-color:rgb(38,30,46);text-align: center;color:white">&copy; Copyright 2019 Web Team IIT GOA</footer>
+</body>
+</html>
+<script src="../javaScript/MessFeedbackScripts.js"></script>
+<script src="../javaScript/SignInAllScripts.js"></script>

@@ -1,0 +1,285 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>CSMS</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css"/>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="140503907288-g665dccn1p9me9ihmt6sq6aho7vhqujc.apps.googleusercontent.com">
+	<meta name="google-signin-hosted_domain" content="iitgoa.ac.in">
+    <link rel="stylesheet" type="text/css" href="../CSS/navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/formStyle.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="row">
+		<div class="head">
+			<div class="Title1">IIT GOA HOSTEL</div>
+			<div class="Title2">GEC Campus Farmagudi,Ponda,Goa 403401</div>
+		</div>
+	</div>
+
+    <div class="menu">
+    	<span class="fa fa-bars modify"></span>
+    </div>
+ 
+    <div class="row">
+			<nav class="topNavigation">
+		   <ul>
+			<li><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+			<li><a href="about.html"><span class="fa fa-info"></span>About</a></li>
+			<li><a href="#"><span class="fa fa-users"></span>Council</a>
+			<ul>
+				<li><a href="presentCouncil.html">Present</a></li>
+				<li><a href="council2017_2018.html">2017-2018</a></li>
+				<li><a href="council2016_2017.html">2016-2017</a></li>
+			</ul>
+			</li>
+			<li><a href="#"><span class="fa fa-book"></span>Constitution</a></li>
+			<li><a href="CSMS.html"><span class="fa fa-pencil-square-o"></span>CSMS</a></li>
+			<li><a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
+			<ul>
+				<li><a href="newMessFeedback.php">Mess</a></li>
+				<li><a href="SecurityFeedback.html">Security</a></li>
+				<li><a href="HouseKeepingFeedback.html">House Keeping</a></li>
+			</ul>
+			</li>
+			<li><a href="IOMS.html"><span class="fa fa-pencil-square-o"></span>IOMS</a></li>
+		</ul>
+	</nav>
+   </div>
+
+	<div class="row">
+    	<div class="column-100">
+    		<div class="card" style="border-style: ridge;border-radius: 5px">
+    		     <div class="Title4">Complaint And Suggestion Management System</div>
+    	    </div>
+    	</div>
+    </div>
+
+
+
+<div class="row">
+		<div class="column-100">
+			<div class="container">
+				<div class="card" style="background-color: #6a5acd;border-radius: 5px">
+						<div class="card" style="box-shadow: 5px 5px 5px 5px #191970;">
+
+							<!--<div class="Title3" id="activeThing">Login</div>-->
+<!----------------------------------------Sign In link----------------------------------------------->
+                           
+			
+
+
+<!------------------------------------------------Profile------------------------------------------------->
+
+                            <div id="Profile">
+
+	                            <div class="row" style="background-color:#dcdcdc">
+									<div class="Title3" id="Name"></div>
+								</div>
+
+								<div class="row">
+									<div claas="column-100" style="text-align: right">
+										<a href="#" onclick="signOut('Profile');">Sign out</a>
+									</div>
+								</div>
+
+	                                <div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:;">
+												    	<div class="label1"><h3>Roll Number</h3></div>
+												    	<!--<h2>Roll Number</h2>-->
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="RolNo"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="width:">
+												    	<div class="label1"><h3>Room Number</h3></div>
+													</div>
+												    <div class="col-20" style="width:">
+												    	<div class="label1" id="RomNo"></div>
+													</div>
+											</div>
+									</div>
+
+									<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>E-mail</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="E_mail"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Hostel</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="HNo"></div>
+													</div>
+											</div>
+									</div>
+	                                    
+
+
+	                                    <div class="row" style="background-color:">
+	                                        <div class="column-33">
+									    		<div class="row" style="padding-top:10px;width:">
+													<input type="button" name="Mess" id="mess" value="Register Mess Complaint/Suggestion ">
+												</div>
+											</div>
+											<div class="column-33">
+												<div class="row" style="padding-top:10px">
+													<input type="button" name="Hosp" id="hosp" value="Register Hospital Complaint/Suggestion ">
+												</div>
+											</div>
+											<div class="column-33">
+												<div class="row" style="padding-top:10px">
+													<input type="button" name="Main" id="maint" value="Register Maintenance Complaint/Suggestion ">
+												</div>
+											</div>
+										</div>
+	 
+
+
+			                     
+	                                  <div id="ActiveForm"> 
+	                                    	<!--------------- Mess complaint/suggetion form ---------------------->
+								        <form id="MessComp" action="">
+								        	<label for="mess_cmp_sug">Complaint/Suggestion</label>
+								        	<select id="mess_cmp_sug" name="messCmpSug">
+								        	     <option value="Complaint">Complaint</option>
+								        	     <option value="Suggestion">Suggestion</option>
+								        	</select> 
+
+								        	<label for="mess_sub">Subject</label>
+								        	<select id="mess_sub" name="messSubject">
+								        	     <option value="Related to Food Quality">Related to Food Quality</option>
+								        	     <option value="Related to Food Quantity">Related to Food Quantity</option>
+								        	     <option value="Related to Sitting facility">Related to Sitting Facility</option>
+								        	     <option value="Related to Sitting facility">Related to Timing</option>
+								        	     <option value="Related to Equipments">Related to Equipment</option>
+								        	     <option value="Related to Hygiene">Related to Hygien</option>
+								        	     <option value="Related to Mess Menu">Related to Mess Menu</option>
+								        	</select> 
+
+								        	<label for="mess_content">Content</label>
+								        	<textarea rows="5" cols="50" id="mess_content" name="messContent"></textarea>
+
+								        	<label class="error" id="messContentError"></label>
+
+								        	<label for="file">Upload Images (If any)</label>
+								        	<input type="file" name="messFile" id="messFile" accept="image/*" />
+								        	<label class="error" id="messFileError"></label>
+
+								        	<div class="row" style="padding-top:10px">
+											<input type="submit" name="Mess" id="MessSubmit" value="Submit">
+										    </div>
+
+								        </form>
+
+	                                    <!------------------ Hospital Compalint/suggestion form----------------->
+								        <form id="HospComp" action="">
+								        	<label for="hosp_cmp_sug">Complaint/Suggestion</label>
+								        	<select id="hosp_cmp_sug" name="hospCmpSug">
+								        	     <option value="Complaint">Complaint</option>
+								        	     <option value="Suggestion">Suggestion</option>
+								        	</select> 
+
+								        	<label for="hosp_sub">Subject</label>
+								        	<select id="hosp_sub" name="hospSubject">
+								        	     <option value="Related to Doctor unavailability">Related to Doctor unavailability</option>
+								        	     <option value="Related to Nurse unavailability">Related to Nurse unavailability</option>
+								        	     <option value="Non-Satisfactory treatment at Dispencery">Non-Satisfactory treatment at Dispencery</option>
+								        	     <option value="Non-Satisfactory treatment at Hospital">Non-Satisfactory treatment at Hospital</option>
+								        	     <option value="Related to Vehicle for Hospital">Related to Vehicle for Hospital</option>
+								        	   
+								        	</select> 
+
+								        	<label for="hosp_content">Content</label>
+								        	<textarea rows="5" cols="50" id="hosp_content" name="hospContent"></textarea>
+
+								        	<label class="error" id="hospContentError"></label>
+
+								        	<label for="file">Upload Images (If any)</label>
+								        	<input type="file" name="hospFile" accept="image/*" />
+								        	<label class="error" id="hospFileError"></label>
+
+								        	<div class="row" style="padding-top:10px">
+											<input type="submit" name="Hosp" id="HospSubmit" value="Submit">
+										    </div>
+
+								        </form>
+
+								        <!-----------------maintenence Compalint/suggestion form--------------->
+
+								        <form id="MainComp" action="">
+								        	<label for="maint_cmp_sug">Complaint/Suggestion</label>
+								        	<select id="maint_cmp_sug" name="maintCmpSug">
+								        	     <option value="Complaint">Complaint</option>
+								        	     <option value="Suggestion">Suggestion</option>
+								        	</select> 
+
+								        	<label for="maint_sub">Subject</label>
+								        	<select id="maint_sub" name="maintSubject">
+								        	     <option value="Related to Electrical Appliances">Related to Electrical Appliances</option>
+								        	     <option value="Related to Room Furniture">Related to Room Furniture</option>
+								        	     <option value="Related to Electricity">Related to Electricity</option>
+								        	     <option value="Related to Wi-fi">Related to Wi-fi</option>
+								        	     <option value="Related to Drinking Water">Related to Drinking Water</option>
+								        	     <option value="Related to Water">Related to Water</option>
+								        	     <option value="Related to Rest Room">Related to Rest Room</option>
+								        	     <option value="Related to Washing Machine">Related to Washing Machine</option>
+								        	     <option value="Related to Common Facilities">Related to Common Facilities</option>
+								        	     <option value="Other">Other</option>
+
+								        	   
+								        	</select> 
+
+                                            <label for="maint_location">Problem location</label>
+                                            <input type="text" id="maintLocation" name="maintLocation" value=""/>
+                                            <label class="error" id="maintLocationError"></label>
+
+								        	<label for="maint_content">Content</label>
+								        	<textarea rows="5" cols="50" id="maint_content" name="maintContent"></textarea>
+
+								        	<label class="error" id="maintContentError"></label>
+
+								        	<label for="file">Upload Images (If any)</label>
+								        	<input type="file" name="maintFile" accept="image/*" />
+								        	<label class="error" id="maintFileError"></label>
+
+								        	<div class="row" style="padding-top:10px">
+											<input type="submit" name="Maint" id="MaintSubmit" value="Submit">
+										    </div>
+								        </form>
+								      </div>
+
+								      <div class="message" id="RightMessage">
+								        	<h2 id="msg1" style="color:green"><span class="fa fa-check-circle"></span>Complaint Submitted Successfully!</h2>
+								        	<p id="msg2" style="color:green">We will solve as soon as possible.</p>
+								      </div>
+
+	                            </div>
+
+			        		</div>
+				</div>
+	    	</div>
+   		</div>
+	</div>
+
+<footer style="background-color:rgb(38,30,46);text-align: center;color:white">&copy; Copyright 2019 Web Team IIT GOA</footer>
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../javaScript/menu.js"></script>
+<!-- <script src="../javaScript/formScripts.js"></script> -->
+<script src="../javaScript/SignInScripts.js"></script>
+<script src="../javaScript/CSMSScripts.js"></script>

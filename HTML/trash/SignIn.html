@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>IIT Goa Hostel</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="140503907288-g665dccn1p9me9ihmt6sq6aho7vhqujc.apps.googleusercontent.com">
+	<meta name="google-signin-hosted_domain" content="iitgoa.ac.in">
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/sideNavigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/formStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/messMenuStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/imageSlide.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body>
+
+
+	<!--<div class="row" style="height:20px">
+	</div>-->
+	 <div class="row">
+		<div class="head">
+			<div class="Title1">IIT GOA HOSTEL</div>
+			<div class="Title2">GEC Campus Farmagudi,Ponda,Goa 403401</div>
+		</div>
+	</div>
+
+    <div class="menu">
+    	<span class="fa fa-bars modify"></span>
+    </div>
+
+    <div class="row">
+		<nav class="topNavigation">
+			<ul>
+				<li><a href="#"><span class="fa fa-home"></span>Home</a></li>
+				<li><a href="about.html"><span class="fa fa-info"></span>About</a></li>
+				<li><a href="#"><span class="fa fa-users"></span>Council</a>
+				<ul>
+					<li><a href="presentCouncil.html">Present</a></li>
+					<li><a href="council2017_2018.html">2017-2018</a></li>
+					<li><a href="#">2016-2017</a></li>
+				</ul>
+				</li>
+				<li><a href="#"><span class="fa fa-book"></span>Constitution</a></li>
+				<li><a href="CSMS.html"><span class="fa fa-pencil-square-o"></span>CSMS</a></li>
+				<li><a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
+				<ul>
+					<li><a href="MessFeedback.html">Mess</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">House Keeping</a></li>
+				</ul>
+				</li>
+			</ul>
+		</nav>
+   </div>
+
+        <div class="row">
+		     <div class="column-100">
+			     <div class="container">
+				     <div class="card" style="background-color: #6a5acd;border-radius: 5px">
+						<div class="card" style="box-shadow: 5px 5px 5px 5px #191970;">
+
+						     
+						     <div class="Title3" id="activeThing">Login</div>
+
+						     <div class="row">
+						     	<ul id="Prof">
+
+						     	</ul>
+						     </div>
+						     <div class="row">
+						     	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+						     	<script>
+						     		function onSignIn(googleUser) {
+											  var profile = googleUser.getBasicProfile();
+											  var domain = googleUser.getHostedDomain();
+											  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+											  console.log('Name: ' + profile.getName());
+											  console.log('Image URL: ' + profile.getImageUrl());
+											  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+											  $("#Prof").append("<li> Success</li>");
+											  $("#Prof").append("<li>ID :" +profile.getEmail()+"</li>");
+											  $("#Prof").append("<li>ID :" +profile.getName()+"</li>");
+                                              $("#Prof").append("<li>ID :" +profile.getImageUrl()+"</li>");
+
+											  $("#Prof").append("<li>ID :" +domain+"</li>");
+											  googleUser.disconnect();
+
+											}
+						     	</script>
+						     </div>
+						     <div class="row">
+						     <a href="#" onclick="signOut();">Sign out</a>
+										<script>
+										  function signOut() {
+										    var auth2 = gapi.auth2.getAuthInstance();
+										    auth2.signOut().then(function () {
+										    	$("#Prof").append("<li> Signed out </li>");
+										     console.log('User signed out.');
+										    });
+
+										  }
+										</script>
+							 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer style="background-color:rgb(38,30,46);text-align: center;color:white">&copy; Copyright 2019 Web Team IIT GOA</footer>
+		</body>
+		</html>

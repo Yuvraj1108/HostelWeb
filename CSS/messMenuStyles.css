@@ -1,0 +1,50 @@
+.messMenuContainer ul 
+{
+  margin-left: 20px;
+}
+
+.foldup_button{
+  width:94%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5%;
+  text-align: center;
+  clear:both;
+  cursor: pointer;
+  padding:3%;
+  font-family: 'Roboto';
+  font-size:200%;
+  color:rgb(13, 21, 19);
+}
+
+.reveal{
+  margin-top:2%;
+  display: none;
+  clear:both;
+  width:100%;
+}
+
+/*.itemsrate{
+
+  float: left;
+  flex:auto;
+  padding: 5%;
+}
+*/
+.slider{
+  -webkit-appearance: none;
+  background: linear-gradient( to right, red, yellow, green);
+  height: 10px;
+  margin:5%;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: rgb(30, 67, 47);
+  cursor: pointer;
+}

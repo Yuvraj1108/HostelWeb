@@ -1,0 +1,157 @@
+.sliderMain
+{
+    width:100%;
+	margin:0 auto;
+	height:80%;
+	/*border-radius: 5px;*/
+	background-image:url(../Images/HostelPic2.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	animation:slideMain 2s infinite;
+	.transition-delay: 0s;
+
+}
+@keyframes slideMain
+{
+	/*0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+  33%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	66%{
+		background-image: url(../Images/GirlsHostel.png);
+	}
+	99%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	100%{
+		background-image: url(../Images/hostel5.jpeg);
+	}
+
+	50%{
+		background-image:url(../Images/HostelPic3.jpg);
+	
+	}*/
+	cross-fade(<../Images/HostelPic3.jpg>,<../Images/HostelPic2.jpg>,0.4)
+	
+}
+.sliderMess
+{
+    width:100%;
+	margin:0 auto;
+	height:80%;
+	/*border-radius: 5px;*/
+	background-image:url(../Images/dining1.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	/*animation:slideMess 10s infinite;
+	.transition-delay: 2s;*/
+}
+@keyframes slideMess
+{
+	33%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	66%{
+		background-image: url(../Images/GirlsHostel.png);
+	}
+	99%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	/*100%{
+		background-image: url(../Images/hostel5.jpeg);
+	}*/
+}
+.sliderMaint
+{
+    width:100%;
+	margin:0 auto;
+	height:60%;
+	/*border-radius: 5px;*/
+	background-image:url(../Images/maintenence.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	/*animation:slideMaint 10s infinite;
+	.transition-delay: 2s;*/
+}
+@keyframes slideMaint
+{
+	33%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	66%{
+		background-image: url(../Images/GirlsHostel.png);
+	}
+	99%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	/*100%{
+		background-image: url(../Images/hostel5.jpeg);
+	}*/
+}
+.sliderMedical
+{
+    width:100%;
+	margin:0 auto;
+	height:80%;
+	/*border-radius: 5px;*/
+	background-image:url(../Images/MyMedical.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	/*animation:slideMedical 10s infinite;
+	.transition-delay: 2s;*/
+}
+@keyframes slideMedical
+{
+	33%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	66%{
+		background-image: url(../Images/GirlsHostel.png);
+	}
+	99%{
+		background-image: url(../Images/MyHostel.png);
+	}
+	/*100%{
+		background-image: url(../Images/hostel5.jpeg);
+	}*/
+}
+img{
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+.detail
+{
+	padding: 10px 16px;
+}
+.title0
+{
+	font-size: 20px;
+	font-style: 
+	italic;margin-top: 5px;
+	text-align: center;
+}
+/*.detail:after
+{
+	content: "";
+    clear: both;
+    display: table;
+}*/
+@media screen and (max-width :700px){
+	.sliderMain,.sliderMess,.slderMaint,.sliderMedical{
+		height:200px;
+		width:95%;
+	}
+	.title0
+	{
+		font-size: 18px;
+	}
+
+}

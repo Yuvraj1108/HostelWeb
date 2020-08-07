@@ -1,0 +1,364 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Housekeping Feedback</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css"/>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="140503907288-g665dccn1p9me9ihmt6sq6aho7vhqujc.apps.googleusercontent.com">
+	<meta name="google-signin-hosted_domain" content="iitgoa.ac.in">
+    <link rel="stylesheet" type="text/css" href="../CSS/navigation.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/content.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/formStyle.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="row">
+		<div class="head">
+			<div class="Title1">IIT GOA HOSTEL</div>
+			<div class="Title2">GEC Campus Farmagudi,Ponda,Goa 403401</div>
+		</div>
+	</div>
+
+    <div class="menu">
+    	<span class="fa fa-bars modify"></span>
+    </div>
+
+	<nav class="topNavigation">
+		<ul>
+			<li><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+			<li><a href="about.html"><span class="fa fa-info"></span>About</a></li>
+			<li><a href="#"><span class="fa fa-users"></span>Council</a>
+			<ul>
+				<li><a href="presentCouncil.html">Present</a></li>
+				<li><a href="council2017_2018.html">2017-2018</a></li>
+				<li><a href="council2016_2017.html">2016-2017</a></li>
+			</ul>
+			</li>
+			<li><a href="#"><span class="fa fa-book"></span>Constitution</a></li>
+			<li><a href="CSMS.html"><span class="fa fa-pencil-square-o"></span>CSMS</a></li>
+			<li><a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
+			<ul>
+				<li><a href="newMessFeedback.php">Mess</a></li>
+				<li><a href="SecurityFeedback.html">Security</a></li>
+				<li><a href="HouseKeepingFeedback.html">House Keeping</a></li>
+			</ul>
+			</li>
+			<li><a href="IOMS.html"><span class="fa fa-pencil-square-o"></span>IOMS</a></li>
+		</ul>
+	</nav>
+
+	<div class="row">
+    	<div class="column-100">
+    		<div class="card" style="border-style: ridge;border-radius: 5px">
+    		     <div class="Title4">Feedback For Housekeeping Service</div>
+    	    </div>
+    	</div>
+    </div>
+
+
+
+<div class="row">
+		<div class="column-100">
+			<div class="container">
+				<div class="card" style="background-color: #6a5acd;border-radius: 5px">
+						<div class="card" style="box-shadow: 5px 5px 5px 5px #191970;">
+
+							<!--<div class="Title3" id="activeThing">Login</div>-->
+<!----------------------------------------Sign In link----------------------------------------------->
+                            <div id="Login">
+                            	<div class="row" id="SignIn">
+                     	            <div class="row">
+                     	                 <lable><b>Sign In using your IIT Goa Email ID</b></lable>
+                     	             </div>
+
+	                     	         <div class="row">
+	                     	         	<div class="column-33">
+	                     	         	</div>
+		                     	        <div class="column-33">
+		                                  <div class="g-signin2" data-width="290" data-height="50"  data-onsuccess="onSignIn"></div>
+		                                </div>
+		                                <div class="column-33">
+		                                </div>
+                                     </div>
+                                     <div class="row">
+                        	             <label class="error" id="SignInError"></label>
+                                    </div>
+                                </div>
+
+	                            <div class="row" id="IAm">
+	                            	  <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStudent" name="IsStudent" value="I am a Student ">
+									  </div>
+									   <div class="row" style="padding-top:10px">
+											<input type="button" id="IsStaff" name="IsStaff" value="I am a Faculty/Staff Member">
+									  </div>
+	                            </div>
+
+                                <div class="message" id="Alert">
+						        	<h2 style="color:red"><span class="fa fa-exclamation-triangle" aria-hidden="true"></span>This facility is only for students!</h2>
+						        	<div class="row">
+										<div claas="column-100" style="text-align: center">
+											<a href="#" onclick="signOut('Alert');">Sign out</a>
+										</div>
+								    </div>
+								</div>
+ 
+							    <form action="" id="NewStudent" >
+                                    <div class="row" style="background-color:#dcdcdc">
+							             <div class="Title3" id="info">Update Your Profile</div>
+						            </div>
+
+									<label for ="Roll_No"><b>Roll Number</b></label>
+									<input type="text" id="Roll_No" name="RollNo" placeholder="Your Roll Number"/>
+									<label class="error" for="Roll_No" id="Roll_NoError">This Field is required</label>
+                                    
+                                    <label for ="hostelNo"><b>Hostel</b></label>
+                                    <select id="hostelNo" name="HostelNo">
+						        	     <option value="1">Boys Hostel-1 (GEC Hostel)</option>
+						        	     <option value="2">Boys Hostel-2 (New Hostel)</option>
+						        	     <option value="3">Girls Hostel-1 (New Hostel)</option>
+						        	</select>
+
+                                    <div class="row">
+                                    	<div class="col-50">
+                                    		<div class="col-50">
+												<label for ="floor"><b>Floor</b></label>
+											</div>
+											<div class="col-50">
+												<select id="floor" name="Floor">
+						        	      		<option value="G">Ground</option>
+						        	     			<option value="F">First</option>
+						        	     			<option value="S">Second</option>
+						        				</select>
+											</div>
+								        </div>
+                                    	<div class="col-50">
+                                    		<div class="col-50">
+												<label for ="room"><b>Room Number</b></label>
+											</div>
+											<div class="col-50">
+												<input type="text" id="room" name="RoomNo" placeholder="Your Room Number"/>
+												<label class="error" for="room" id="roomError">This Field is required</label>
+											</div>
+								        </div>
+								    </div>
+
+                                    <div class="row">
+                                    	<div class="col-50">
+                                    		<div class="col-50" style="background-color:;width:">
+								    			<label for ="gender"><b>Gender</b></label>
+								    		</div>
+								    		<div class="col-50" style="background-color:;width:">
+                                    			<select id="gender" name="Gender">
+						        	     			<option value="Male">Male</option>
+						        	     			<option value="Female">Female</option>
+						        				</select>
+						        		 	</div>
+						        		</div>
+						        		<div class="col-50">
+						        			<div class="col-50" style="background-color:;width:">
+						        				<label for ="dob"><b>Date Of Birth</b></label>
+						        			</div>
+						        			<div class="col-50" style="background-color:;width:">
+												 <label><input type="date" name="DOB"></label>
+                                                 <label class="error" id="DOBError"></label>
+											</div>
+						        		</div>
+						        	</div>
+
+						        	<label for ="StudentContact"><b>Your Contact Number</b></label>
+									     <input type="text" id="StudentContact" name="StudentContact" placeholder="Contact Number"/>
+									     <label class="error" for="StudentContact" id="StudentContactError">This Field is required</label>
+                                     
+                                    <label for ="ParentContact"><b>Parent's Contact Number</b></label>
+									     <input type="text" id="ParentContact" name="ParentContact" placeholder="Contact Number"/>
+									     <label class="error" for="ParentContact" id="ParentContactError">This Field is required</label>
+
+									     <label for ="ParentEmail"><b>Parent's Email-ID</b></label>
+									     <input type="text" id="ParentEmail" name="ParentEmail" placeholder="Email Id of parent"/>
+									     <label class="error" for="ParentEmail" id="ParentEmailError">This Field is required</label>
+									
+                                    <label class="error" id="result"></label>
+
+									<div class="row" style="padding-top:10px">
+									<input type="submit" id="formNewStudent" name="formNewStudent" value="Proceed">
+								    </div>
+						        </form>
+						    </div>
+			
+
+
+<!------------------------------------------------Profile------------------------------------------------->
+
+                            <div id="Profile">
+
+	                            <div class="row" style="background-color:#dcdcdc">
+									<div class="Title3" id="Name"></div>
+								</div>
+
+								<div class="row">
+									<div claas="column-100" style="text-align: right">
+										<a href="#" onclick="signOut('Profile');">Sign out</a>
+									</div>
+								</div>
+
+	                                <div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:;">
+												    	<div class="label1"><h3>Roll Number</h3></div>
+												    	<!--<h2>Roll Number</h2>-->
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="RolNo"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="width:">
+												    	<div class="label1"><h3>Room Number</h3></div>
+													</div>
+												    <div class="col-20" style="width:">
+												    	<div class="label1" id="RomNo"></div>
+													</div>
+											</div>
+									</div>
+
+									<div class="row" style="background-color:">
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>E-mail</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="E_mail"></div>
+													</div>
+											</div>
+											<div class="col-50" style="background-color:;width:">
+													<div class="col-50" style="background-color:;width:">
+												    	<div class="label1"><h3>Hostel Number</h3></div>
+													</div>
+												    <div class="col-50" style="background-color:;width:">
+												    	<div class="label1" id="HNo"></div>
+													</div>
+											</div>
+									</div>
+
+                                    <label class="error" id="NotifyError"></label>
+									<div class="message" id="Notify">
+								        	 <h2 id="msg1" style="color:green"><span class="fa fa-check-circle"></span>You Have Already Submitted Your Feedback!</h2>
+								        	 <p id="msg2" style="color:green">Giving again will overwrite it!</p>
+
+								        	 <div class="row" style="padding-top:10px">
+											    <input type="button" id="Edit" name="Edit" value="Chnage My Feedback">
+									         </div>								        	
+								     </div>
+
+									<form action="" id="HouseKeepingFeedback">
+										<div id="Questions">
+										</div>
+
+										
+										<label for ="Corridors"><b>Cleanliness of Corridors</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Corridors" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Corridors" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Corridors" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Corridors" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Corridors" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Corridors" value="NA" checked> NA</div>
+											 </div>
+										<label for ="CommonRoom"><b>Cleanliness of Common Room</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="CommonRoom" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="CommonRoom" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="CommonRoom" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="CommonRoom" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="CommonRoom" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="CommonRoom" value="NA" checked> NA</div>
+											 </div>
+										<label for ="Rooms"><b>Cleanliness of Rooms</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Rooms" value="Very Poor"> Very Poor</div>
+						                     	 <div class="col-16"><input type="radio" name="Rooms" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Rooms" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Rooms" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Rooms" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Rooms" value="NA" checked> NA</div>
+											 </div>
+										<label for ="Accessories"><b>Cleanliness of Fans/Windows/Tables etc.</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Accessories" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Accessories" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Accessories" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Accessories" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Accessories" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Accessories" value="NA" checked> NA</div>
+											 </div>
+										<label for ="Bathrooms"><b>Cleanliness of Bathrooms</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Bathrooms" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Bathrooms" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Bathrooms" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Bathrooms" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Bathrooms" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Bathrooms" value="NA" checked> NA</div>
+											 </div>
+									    <label for ="Toilets"><b>Cleanliness of Toilets</b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Toilets" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Toilets" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Toilets" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Toilets" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Toilets" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Toilets" value="NA" checked> NA</div>
+											 </div>
+									    <label for ="Timing"><b>Timing of Housekeeping service </b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Timing" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Timing" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Timing" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Timing" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Timing" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Timing" value="NA" checked> NA</div>
+											 </div>    
+										<label for ="Overall"><b>Overall Housekeeping Service  </b></label>
+						                     <div class="row">
+						                     	 <div class="col-16"><input type="radio" name="Overall" value="Very Poor"> Very Poor</div>			
+										     	 <div class="col-16"><input type="radio" name="Overall" value="Poor"> Poor</div>
+											     <div class="col-16"><input type="radio" name="Overall" value="Average"> Average</div>
+											 	 <div class="col-16"><input type="radio" name="Overall" value="Good"> Good</div>
+											     <div class="col-16"><input type="radio" name="Overall" value="Very Good"> Very Good</div>
+											     <div class="col-16"><input type="radio" name="Overall" value="NA" checked> NA</div>
+											 </div> 
+
+									    <label for="commennt"><b>Your Valuable Comment</b></label>
+									     <textarea rows="5" cols="50" id="comment" name="comment"></textarea>
+					                     
+					                     <label class="error" id="FeedbackError"></label>
+
+					                     <div class="row" style="padding-top:10px">
+										    <input type="submit" name="Housekeeping" value="Submit">
+										 </div>
+									</form>
+
+									<div class="message" id="RightMessage">
+								        	<h2 id="msg1" style="color:green"><span class="fa fa-check-circle"></span>Feedback Submitted Successfully!</h2>
+								        	<p id="msg2" style="color:green">Thanks For Your Feedback!</p>
+								     </div>
+
+	                            </div>
+
+			        	   </div>
+				   </div>
+	    	</div>
+   		</div>
+	</div>
+
+<footer style="background-color:rgb(38,30,46);text-align: center;color:white">&copy; Copyright 2019 Web Team IIT GOA</footer>
+</body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../javaScript/menu.js"></script>
+<script src="../javaScript/SignInScripts.js"></script>
+<script src="../javaScript/HouseKeepingScripts.js"></script>
